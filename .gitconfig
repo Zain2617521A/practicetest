@@ -17,3 +17,5 @@
 [user]
 	email = 2617521A@student.gla.ac.uk
 	name = Zain2617521A
+[push]
+	default = current
