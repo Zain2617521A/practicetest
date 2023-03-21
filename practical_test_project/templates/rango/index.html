@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <title>School News</title>
+    </head>
+
+    <body style="background-color:yellow;">
+
+        <h1><center>School News</center></h1>
+
+        {% if news %}
+            {% for n in news %}
+                <div>
+                    <h1>{{ n.title }}</h1><br>
+                    <i>by {{ n.author }}. {{n.date}} </i><br>
+                    <br>{{n.description}}
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+
+    </body>
+</html>
